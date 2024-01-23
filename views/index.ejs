@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <%- include("partials/head") %> 
+  <body>
+    <%- include("partials/header") %>
+    <div class="lorem">
+        <p class="texto">Nuestra tienda es una de las tiendas top de toda latinoámerica ,somos internacionales. Actualmente nos caracterizamos por el fuerte de envios a domicilio a tu hotel preferido o donde quiera que estes tu envio te llegara sano ,seguro, y con garantia , SOMOS SHOP ME</p>
+    </div>
+    
+    <div class="banner"><img class="banner_img" src="images/13.png" alt="banner" > </div>
+    <main >
+      <h1 class="listado">LISTADO DE PRODUCTOS</h1>
+      
+      <ul class="articulos">
+        
+        <% productos.forEach(p =>{%>
+          <li class="main_article">
+            <a href="/detail/<%=p.id%>"><%=p.name%></a>
+             
+          </li>
+        <% }) %> 
+              
+        
+      </ul>
+      
+
+
+
+    </main>
+   
+   
+    <%- include("partials/footer") %> 
+    
+    
+  </body>
+</html>

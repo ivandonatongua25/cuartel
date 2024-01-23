@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <section class="formulario">
+        <form action="/edit/<%=productos.id %>?_method=PUT" method="POST">
+            <div>
+                <label for="name">Nombre </label>
+                <p><input type="text" name="name" id="name" value="<%=productos.name %>" required></p>
+
+            </div>
+            <div>
+                <label for="price">Precio </label>
+                <p><input type="number" name="price" id="price" value="<%=productos.price %>" required></p>
+
+            </div>
+            <div>
+                <label for="description">Descripción </label>
+                <p><input type="text" name="description" id="description" value="<%=productos.description %>" required></p>
+
+            </div>
+            <div>
+                <label for="brand_id">Brand_id </label> 
+                <p><input type="number" name="brand_id" id="brand_id" value="<%=productos.brand_id %>" required></p>
+                
+
+            </div>
+            <div>
+                <label for="material_id">Material_id </label>
+                <p><input type="number" name="material_id" id="material_id" value="<%=productos.material_id %>" required></p>
+                
+
+            </div>
+            <div>
+                <label for="color_id">Color_id </label>
+                <p><input type="number" name="color_id" id="color_id" value="<%=productos.color_id %>" required></p>
+                
+
+            </div>
+            
+            
+            
+            <br>
+            <p> <button class="botonAgregar" type="submit">Actualizar</button>
+        
+            <a  class="botonVolver" href="/">SHOP ME</a></p>
+        </form>
+    </section>
+</body>
+</html>

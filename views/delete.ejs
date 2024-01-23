@@ -1,0 +1,10 @@
+<h1>Estas seguro de querer borrar este Producto: <%= productos.name %>???</h1>
+    <p>
+        <form action="/delete/<%= productos.id %>?_method=DELETE" method="POST">
+            <br>
+            <p> <button class="botonBorrar" type="submit">Borrar</button>
+            
+            <a  class="botonVolver" href="/">SHOP ME</a></p>
+
+        </form>
+    </p>

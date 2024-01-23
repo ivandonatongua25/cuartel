@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETALLE DE PRODUCTOS </title>
+</head>
+<body>
+    
+    
+        <h1 class="listado">NOMBRE DEL PRODUCTO : <%=productos.name %></h1>
+       
+      <ul class="articulos">
+            <p class="id">ID: <%=productos.id %> </p>
+
+            <label for="name">Nombre : <%=productos.name %> </label>
+            <br>
+            <br>
+            <label for="price">Precio : <%=productos.price%></label>
+            <br>
+            <br>
+            <label for="description">Description : <%=productos.description%> </label>
+            <br>
+            <br>
+            <label for="brand_id">Brand_id : <%=productos.brand_id%> </label>
+            <br>
+            <br>
+            <label for="material_id">Material_id : <%=productos.material_id%> </label>
+            <br>
+            <br>
+            <label for="color_id">Color_id : <%=productos.color_id%> </label>
+            
+        </ul>
+        <a href="/edit/<%=productos.id %>">Editar    </a>
+        <a href="/delete/<%=productos.id %>">    Eliminar</a>
+</body>
+</html>
